@@ -16,7 +16,6 @@ namespace LittleGameUI
         public GamePage()
         {
             InitializeComponent();
-
             InitializeGame();
         }
 
