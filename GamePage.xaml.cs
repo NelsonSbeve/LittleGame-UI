@@ -1,6 +1,7 @@
 ﻿using Microsoft.Maui.Controls;
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -10,8 +11,7 @@ namespace LittleGameUI
     {
         private Caracter Hero;
         private List<Caracter> Opponents;
-        private int currentOpponentIndex;
-        private Battle currentBattle;
+        
 
         public GamePage()
         {
@@ -19,27 +19,24 @@ namespace LittleGameUI
             InitializeGame();
         }
 
+        
+
         private void InitializeGame()
         {
-            Hero = CreateHero();
+             
+            
             Opponents = CreateOpponents();
-            currentOpponentIndex = 0;
-
-            UpdateStatusLabel($"Caracter successfully created. Welcome {Hero.name}");
+            
+            
+            
+           
         }
-
-        private Caracter CreateHero()
+         private void UpdateStatusLabel(string message)
         {
-            string name;
-            string gender;
-
-            // Simulate user input (replace this with actual user input in a real app)
-            name = "Player";
-            gender = "Male";
-
-            return new Caracter(name, gender);
+            StatusLabel.Text = message;
         }
 
+        
         private List<Caracter> CreateOpponents()
         {
             var opponents = new List<Caracter>();
@@ -56,33 +53,38 @@ namespace LittleGameUI
             return opponents;
         }
 
-        private void UpdateStatusLabel(string message)
-        {
-            StatusLabel.Text = message;
-        }
-
+      
         private async void OnStartBattleClicked(object sender, EventArgs e)
         {
-            if (currentOpponentIndex < Opponents.Count)
+           await Navigation.PushAsync(new CaracterCreation());
+            Hero = CreateHero();
+            Caracter CreateHero()
             {
-                var opponent = Opponents[currentOpponentIndex];
-                currentBattle = new Battle(Hero, opponent);
+                    
+                        string name;
+                        string gender;
 
-                UpdateStatusLabel($"Starting battle against {opponent.name}");
+                        // Use .NET MAUI's input dialog to get user input
+                        Entry nameInput = new Entry { Placeholder = "Enter Name" };
+                        nameInput.TextChanged += OnEntryTextChanged;
+                        Entry genderInput = new Entry { Placeholder = "Enter Gender" };
+                        
 
-                await Task.Run(() => currentBattle.Start());
+                    name = nameInput.Text;
+                    gender = genderInput.Text;
 
-                currentOpponentIndex++;
+                    
 
-                if (currentOpponentIndex < Opponents.Count)
-                {
-                    UpdateStatusLabel("Press 'Start Battle' for the next battle");
-                }
-                else
-                {
-                    UpdateStatusLabel("All battles completed. Game Over!");
-                }
+
+                    return new Caracter(name, gender);
             }
+
+            void OnEntryTextChanged(object sender, TextChangedEventArgs e)
+            {
+                string oldText = e.OldTextValue;
+                string newText = e.NewTextValue;
+                
+            }  
         }
     }
 }

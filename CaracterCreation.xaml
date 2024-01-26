@@ -4,11 +4,12 @@
              xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="LittleGameUI.GamePage">
+             x:Class="LittleGameUI.CaracterCreation">
 
     <StackLayout>
-        <Label x:Name="StatusLabel" Text="Welcome to BattleMania" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-        <Button Text="Start Battle" Clicked="OnStartBattleClicked" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+        <Entry x:Name="NameEntry" Placeholder="Enter Name"/>
+        <Entry x:Name="GenderEntry" Placeholder="Enter Gender"/>
+        <Label x:Name="StatusLabel" Text="Create your Caracter" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
 
     </StackLayout>
 
