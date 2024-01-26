@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o8Yphgbi+PvSw2uIiINsoLixgEr65TwLCNFJUZM1Kf+TOX1dDp7CT7i/wuf95WRMxmvQ3Mo0XOtt9iqrRCbVOA==",
+  "dgSpecHash": "C+5u+auykABASj4pt6BMeDJTfryGFF0PhjDtDILfEmfHm9FjMVNAjAWkb9hB+vfGKz2XKg2+WJ/+0dGYXpeGGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Utilizador\\Desktop\\Nova pasta\\LittleGameUI.csproj",
+  "projectFilePath": "C:\\Users\\Utilizador\\Desktop\\LittleGame-UI\\LittleGameUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Utilizador\\.nuget\\packages\\googlegson\\2.9.1.1\\googlegson.2.9.1.1.nupkg.sha512",
     "C:\\Users\\Utilizador\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
