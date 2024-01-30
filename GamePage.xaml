@@ -6,10 +6,23 @@
              mc:Ignorable="d"
              x:Class="LittleGameUI.GamePage">
 
-    <StackLayout>
-        <Label x:Name="StatusLabel" Text="Welcome to BattleMania" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-        <Button Text="Start Battle" Clicked="OnStartBattleClicked" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-
+<Grid>
+    <Image
+        x:Name="backgroundImage"
+        Source="C:\Users\Utilizador\Desktop\Projetos\LittleGame-UI\OIG3.jpeg"
+        Aspect="AspectFill"/>
+    <StackLayout VerticalOptions="FillAndExpand" Margin="0,0,0,100">
+        <Label Text="Welcome to BattleMania" 
+               FontSize="40" 
+               TextColor="White" 
+               HorizontalOptions="Center" 
+               VerticalOptions="StartAndExpand"/>
+        <Button Text="Start Battle" 
+                Clicked="OnStartBattleClicked" 
+                HorizontalOptions="Center" 
+                VerticalOptions="End"/>
     </StackLayout>
+</Grid>
+
 
 </ContentPage>

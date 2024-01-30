@@ -6,11 +6,10 @@
              mc:Ignorable="d"
              x:Class="LittleGameUI.CaracterCreation">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Entry x:Name="NameEntry" Placeholder="Enter Name" />
-        <Entry x:Name="GenderEntry" Placeholder="Enter Gender" />
-        <Label x:Name="StatusLabel" Text="Create your Caracter" />
-        <Button Text="CREATE" Clicked="CreateOnClick" />
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <Label x:Name="StatusLabel" Text="Create your Character" FontSize="18" Margin="0,10,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+        <Entry x:Name="NameEntry" Placeholder="Enter Name" Completed="OnEntryCompleted" />
+        <Label x:Name="StatusLabel2" Text="Press Enter to Begin" FontSize="16" TextColor="Gray" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
     </StackLayout>
 
 </ContentPage>

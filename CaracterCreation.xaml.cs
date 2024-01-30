@@ -6,64 +6,54 @@ namespace LittleGameUI
     {
 
         private Caracter Hero;
+
         public CaracterCreation()
         {
             InitializeComponent();
-            Hero = CreateHero();
-            
-            
+            _ = InitializeAsync();
         }
-        Caracter CreateHero()
+
+        async Task InitializeAsync()
         {
-                string name = string.Empty;
-                string gender = string.Empty;
+            Hero = await CreateHeroAsync();
+        }
+        async Task<Caracter> CreateHeroAsync()
+        {
+            string name = string.Empty;
+            
                     
 
-                    // Use .NET MAUI's input dialog to get user input
-                    Entry nameInput = new Entry { Placeholder = "Enter Name" };
-                    nameInput.Completed += (s, e) => OnEntryCompleted(nameInput, ref name);
-
-                    Entry genderInput = new Entry { Placeholder = "Enter Gender" };
-                    genderInput.Completed += (s, e) => OnEntryCompleted(genderInput, ref gender);
-
-                    
-                    async void CreateOnClick(object sender, EventArgs e)
-                    {
-                        name = NameEntry.Text;
-                        gender = GenderEntry.Text;
-                        
-
-                        StatusLabel.Text = $"Character created!\nName: {name}\nGender: {gender}";
-                        await Navigation.PushAsync(new BattleScreen());
-
-                    } 
-                    return new Caracter(name, gender);
-
-                    
-
-                    
+            // Use .NET MAUI's input dialog to get user input
+            Entry nameInput = new Entry { Placeholder = "Enter Name" };
+            nameInput.Completed += OnEntryCompleted;
 
 
-                    
 
-                    void OnEntryCompleted(Entry entry, ref string value)
-                    {
-                        value = entry.Text;
-                
-                    }  
+            
+
+            name = nameInput.Text;
+            
+            return new Caracter(name);
+            
+        }
+        async Task DisplayDialogAsync()
+        {
+            // You may need to implement your own dialog display logic.
+            // For simplicity, we'll use DisplayAlert as an example.
+            await DisplayAlert("Congrats", $"{Hero.name}", "Welcome to BattleMania");
+            await Navigation.PushAsync(new GamePage());
+            
         }
 
 
 
+        async void OnEntryCompleted(object sender, EventArgs e)
+        {
 
-        
-
-
-
-
-        
-
+            Hero.name = ((Entry)sender).Text;
+            await DisplayDialogAsync();
             
-        
+        }
+
     }
 }

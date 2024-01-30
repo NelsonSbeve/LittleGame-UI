@@ -20,12 +20,6 @@ build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/BattleScreen.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.BattleScreen.xaml
-build_metadata.AdditionalFiles.TargetPath = BattleScreen.xaml
-build_metadata.AdditionalFiles.RelativePath = BattleScreen.xaml
-
 [C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/CaracterCreation.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.CaracterCreation.xaml

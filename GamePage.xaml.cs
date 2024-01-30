@@ -30,10 +30,6 @@ namespace LittleGameUI
             
            
         }
-         private void UpdateStatusLabel(string message)
-        {
-            StatusLabel.Text = message;
-        }
 
         
         private List<Caracter> CreateOpponents()
@@ -43,9 +39,8 @@ namespace LittleGameUI
             for (int i = 0; i < 4; i++)
             {
                 var opponentName = $"Opponent {i + 1}";
-                var opponentGender = "Male";
                 var opponentHealth = 100;
-                var opponent = new Caracter(opponentName, opponentGender, opponentHealth);
+                var opponent = new Caracter(opponentName, opponentHealth);
                 opponents.Add(opponent);
             }
 
