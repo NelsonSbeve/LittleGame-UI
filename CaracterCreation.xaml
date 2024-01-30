@@ -6,11 +6,11 @@
              mc:Ignorable="d"
              x:Class="LittleGameUI.CaracterCreation">
 
-    <StackLayout>
-        <Entry x:Name="NameEntry" Placeholder="Enter Name"/>
-        <Entry x:Name="GenderEntry" Placeholder="Enter Gender"/>
-        <Label x:Name="StatusLabel" Text="Create your Caracter" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Entry x:Name="NameEntry" Placeholder="Enter Name" />
+        <Entry x:Name="GenderEntry" Placeholder="Enter Gender" />
+        <Label x:Name="StatusLabel" Text="Create your Caracter" />
+        <Button Text="CREATE" Clicked="CreateOnClick" />
     </StackLayout>
 
 </ContentPage>

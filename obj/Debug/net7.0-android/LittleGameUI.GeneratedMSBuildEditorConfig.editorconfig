@@ -12,33 +12,39 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = false
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = LittleGameUI
-build_property.ProjectDir = C:\Users\Utilizador\Desktop\LittleGame-UI\
+build_property.ProjectDir = C:\Users\Utilizador\Desktop\Projetos\LittleGame-UI\
 
-[C:/Users/Utilizador/Desktop/LittleGame-UI/App.xaml]
+[C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[C:/Users/Utilizador/Desktop/LittleGame-UI/CaracterCreation.xaml]
+[C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/BattleScreen.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.BattleScreen.xaml
+build_metadata.AdditionalFiles.TargetPath = BattleScreen.xaml
+build_metadata.AdditionalFiles.RelativePath = BattleScreen.xaml
+
+[C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/CaracterCreation.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.CaracterCreation.xaml
 build_metadata.AdditionalFiles.TargetPath = CaracterCreation.xaml
 build_metadata.AdditionalFiles.RelativePath = CaracterCreation.xaml
 
-[C:/Users/Utilizador/Desktop/LittleGame-UI/GamePage.xaml]
+[C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/GamePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.GamePage.xaml
 build_metadata.AdditionalFiles.TargetPath = GamePage.xaml
 build_metadata.AdditionalFiles.RelativePath = GamePage.xaml
 
-[C:/Users/Utilizador/Desktop/LittleGame-UI/Resources/Styles/Colors.xaml]
+[C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[C:/Users/Utilizador/Desktop/LittleGame-UI/Resources/Styles/Styles.xaml]
+[C:/Users/Utilizador/Desktop/Projetos/LittleGame-UI/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = LittleGameUI.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

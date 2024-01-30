@@ -9,7 +9,6 @@ namespace LittleGameUI
 {
     public partial class GamePage : ContentPage
     {
-        private Caracter Hero;
         private List<Caracter> Opponents;
         
 
@@ -57,34 +56,6 @@ namespace LittleGameUI
         private async void OnStartBattleClicked(object sender, EventArgs e)
         {
            await Navigation.PushAsync(new CaracterCreation());
-            Hero = CreateHero();
-            Caracter CreateHero()
-            {
-                    
-                        string name;
-                        string gender;
-
-                        // Use .NET MAUI's input dialog to get user input
-                        Entry nameInput = new Entry { Placeholder = "Enter Name" };
-                        nameInput.TextChanged += OnEntryTextChanged;
-                        Entry genderInput = new Entry { Placeholder = "Enter Gender" };
-                        
-
-                    name = nameInput.Text;
-                    gender = genderInput.Text;
-
-                    
-
-
-                    return new Caracter(name, gender);
-            }
-
-            void OnEntryTextChanged(object sender, TextChangedEventArgs e)
-            {
-                string oldText = e.OldTextValue;
-                string newText = e.NewTextValue;
-                
-            }  
         }
     }
 }

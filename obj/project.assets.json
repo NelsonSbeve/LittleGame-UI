@@ -24023,11 +24023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Utilizador\\Desktop\\LittleGame-UI\\LittleGameUI.csproj",
+      "projectUniqueName": "C:\\Users\\Utilizador\\Desktop\\Projetos\\LittleGame-UI\\LittleGameUI.csproj",
       "projectName": "LittleGameUI",
-      "projectPath": "C:\\Users\\Utilizador\\Desktop\\LittleGame-UI\\LittleGameUI.csproj",
+      "projectPath": "C:\\Users\\Utilizador\\Desktop\\Projetos\\LittleGame-UI\\LittleGameUI.csproj",
       "packagesPath": "C:\\Users\\Utilizador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Utilizador\\Desktop\\LittleGame-UI\\obj\\",
+      "outputPath": "C:\\Users\\Utilizador\\Desktop\\Projetos\\LittleGame-UI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
